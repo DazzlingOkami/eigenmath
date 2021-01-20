@@ -116,4 +116,5 @@ eigenmath : $(objects)
 $(objects) : defs.h defs1.h prototypes.h
 
 clean :
-	rm -f eigenmath.exe *.o
+	del eigenmath.exe
+	del *.o
