@@ -95,7 +95,7 @@ run_infile(void)
 	int fd, n;
 	char *buf;
 
-	fd = open(infile, O_RDONLY, 0);
+	fd = open(infile, O_RDONLY | O_BINARY, 0);
 
 	if (fd == -1) {
 		fprintf(stderr, "cannot open %s\n", infile);
